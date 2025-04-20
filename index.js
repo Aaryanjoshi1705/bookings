@@ -4,6 +4,7 @@ let{MongoClient}=require("Mongodb")
 let app=express();
 app.use(cors());
 app.use(express.json());
+//const url=""
 const url = "mongodb+srv://aaryanjoshi1705:nGhOWwGYGBFGZMq3@cluster0.s1ilkv6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 app.post("/add",(request,response)=>{
     let client=new MongoClient(url);
